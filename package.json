@@ -1,0 +1,11 @@
+{
+  "name": "ome-rp-dnd.kettek.net",
+  "version": "1.0.0",
+  "description": "Render pack for a personal D&D wiki",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ketchetwahmeegwun T. Southall",
+  "license": "GPL-3.0"
+}

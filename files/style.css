@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Mirza');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-size: 18px;
+  color: #222;
+  font-family: "Mirza", "Lucida Grande", sans-serif;
+  line-height: 1.1;
+  max-height: 100%;
+  background-color: black;
+}
+#container {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+#location {
+  position: relative;
+  background-color: #643;
+  color: #cba;
+  padding: 0.5em 1em;
+}
+#location a {
+  color: #edc;
+}
+
+.hider {
+  display: inline-block;
+  text-align: center;
+  vertical-align: text-top;
+  width: 1em;
+  height: 1em;
+  font-size: 110%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+a.hider {
+  cursor: pointer;
+  color: black !important;
+}
+
+#table-of-contents {
+  position: relative;
+  background-color: #ddd;
+  background-image: url('toc.jpg');
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  overflow: auto;
+  padding: 1em;
+  flex: 2;
+}
+#table-of-contents ul, #table-of-contents li {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#table-of-contents .hider {
+  position: absolute;
+  top: -0.1em;
+  left: -1em;
+}
+
+#table-of-contents ul:first-child {
+  margin: 0;
+}
+#table-of-contents ul {
+  margin-left: 1em;
+}
+#table-of-contents ul>li>a { /* first depth */
+  color: #2F468E;
+}
+#table-of-contents ul>li>ul>li>a { /* 2nd depth */
+  color: #00064E;
+}
+#table-of-contents ul>li>ul>li>ul>li>a { /* 3rd depth */
+  color: #6F861E;
+}
+#table-of-contents ul>li>ul>li>ul>li>ul>li>a { /* 4th depth */
+  color: #6F261E;
+}
+
+#content {
+  overflow: auto;
+  background-color: #fff;
+  background-image: url('bg.jpg');
+}
+#page {
+  flex: 6;
+  padding: 0 2em;
+  width: 100%;
+  overflow: auto;
+}
+
+#content {
+  font-size: 100%;
+  height: 100%;
+  display: flex;
+  overflow: auto;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  overflow: hidden;
+  width: 100%;
+}
+#footer {
+  font-size: 75%;
+  max-width: 75%;
+  margin: auto;
+  padding: 0.5em 1em;
+  color: #fff;
+}
+p {
+  max-width: 40em;
+  padding: 0 1em;
+  margin: 0.5em 0;
+}
+p img, li img, td img {
+  height: 200px;
+  margin: 0 1em 1em 0;
+  float: left;
+  vertical-align: middle;
+}
+hr {
+  border: 0;
+  border-bottom: 1px solid #999;
+  margin: 0;
+  width: 50%;
+}
+a {
+  transition: .05s ease-in-out;
+}
+a, a:visited {
+  color: #602601;
+  /*color: #4166a0;*/
+  text-decoration: none;
+  font-weight: 600;
+}
+a:hover {
+  color: #AE663F;
+}
+h1 {
+  font-size: 200%;
+  color: #3F66AE;
+  padding: 0; margin: 0;
+  margin-top: 1em;
+}
+h2 {
+  clear: both;
+  font-size: 180%;
+  color: #00266E;
+  border-bottom: 1px solid #00266E;
+  padding: 0; margin: 0;
+  margin-top: 1em;
+}
+h3 {
+  font-size: 175%;
+  color: #8Fa63E;
+  border-bottom: 1px solid #8Fa63E;
+  padding: 0; margin: 0;
+  margin-top: 1em;
+}
+h4 {
+  font-size: 170%;
+  color: #8F463E;
+  padding: 0; margin: 0;
+  margin-top: 1em;
+}
+h5 {
+  font-size: 135%;
+  color: #00165E;
+  padding: 0; margin: 0;
+  margin-top: 1em;
+}
+h6 {
+  font-size: 125%;
+  color: #00165E;
+  padding: 0; margin: 0;
+  margin-top: 1em;
+}
+
+table {
+}
+th {
+  color:#D5DDE5;;
+  background:#1b1e24;
+  border-bottom: 2px solid #9ea7af;
+  border-right: 1px solid #343a45;
+  font-size: 90%;
+  font-weight: 100;
+  padding: 6px 12px;
+  text-align:left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align:middle;
+}
+th:first-child {
+  border-top-left-radius:3px;
+}
+th:last-child {
+  border-top-right-radius:3px;
+  border-right:none;
+}
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom-: 1px solid #C1C3D1;
+  color:#666B85;
+}
+tr:first-child {
+  border-top:none;
+}
+tr:last-child {
+  border-bottom:none;
+}
+tr:nth-child(odd) td {
+  background:#EBEBEB;
+}
+tr:last-child td:first-child {
+  border-bottom-left-radius:3px;
+}
+tr:last-child td:last-child {
+  border-bottom-right-radius:3px;
+}
+td {
+  background:#FFFFFF;
+  padding: 0.25em;
+  text-align:left;
+  vertical-align:middle;
+  font-size: 85%;
+  border-right: 1px solid #C1C3D1;
+}
+td:last-child {
+  border-right: 0px;
+}
+
+#menu ul, #menu li {
+  padding: 0;
+  list-style: none;
+}
+#menu li {
+  padding-left: 1em;
+}
+
+@media only screen
+and (orientation: portrait) {
+  #location {
+    font-size: 75%;
+  }
+  #content {
+    display: block;
+    overflow: auto;
+  }
+}
