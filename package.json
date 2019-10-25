@@ -7,5 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ketchetwahmeegwun T. Southall",
-  "license": "GPL-3.0"
+  "license": "GPL-3.0",
+	"repository": "github:kettek/ome-rp-dnd.kettek.net"
 }
