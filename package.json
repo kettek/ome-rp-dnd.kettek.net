@@ -1,6 +1,6 @@
 {
   "name": "ome-rp-dnd.kettek.net",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Render pack for a personal D&D wiki",
   "main": "index.js",
   "scripts": {
@@ -8,5 +8,5 @@
   },
   "author": "Ketchetwahmeegwun T. Southall",
   "license": "GPL-3.0",
-	"repository": "github:kettek/ome-rp-dnd.kettek.net"
+  "repository": "github:kettek/ome-rp-dnd.kettek.net"
 }
